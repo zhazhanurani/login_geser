@@ -90,5 +90,19 @@
     </LinearLayout>
 
 
+<Button
+    android:id="@+id/btn_register"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Register"
+    android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:gravity="center_horizontal"/>
+
+
 
 </LinearLayout>
