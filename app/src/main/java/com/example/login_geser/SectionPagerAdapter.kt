@@ -10,8 +10,8 @@ class SectionsPagerAdapter(activity: AppCompatActivity) :
     override fun createFragment(position: Int): Fragment {
         var fragment: Fragment? = null
         when (position) {
-            0 -> fragment = Login()
-            1 -> fragment = Register()
+            0 -> fragment = Register()
+            1 -> fragment = Login()
         }
         return fragment as Fragment
     }

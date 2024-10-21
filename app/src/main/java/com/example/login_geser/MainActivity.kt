@@ -14,8 +14,8 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
-    val tabName = arrayOf("LOGIN", "REGISTER")
+    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+    val tabName = arrayOf("REGISTER", "LOGIN")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

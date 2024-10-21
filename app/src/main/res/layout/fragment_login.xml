@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="Register"
+        android:text="Login"
         android:textSize="26dp"
         android:textStyle="bold"
         android:paddingBottom="40dp"/>
@@ -26,22 +26,6 @@
         android:layout_height="wrap_content"
         android:hint="username"
         android:drawableStart="@drawable/baseline_account_circle_24"
-        android:drawablePadding="20dp"
-        />
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="email"
-        android:drawableStart="@drawable/baseline_alternate_email_24"
-        android:drawablePadding="20dp"
-        />
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/phone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="phone"
-        android:drawableStart="@drawable/baseline_phone_24"
         android:drawablePadding="20dp"
         />
     <com.google.android.material.textfield.TextInputEditText
