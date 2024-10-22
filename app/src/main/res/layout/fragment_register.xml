@@ -15,6 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        android:textColor="@color/purple_500"
+        android:fontFamily="@font/dynapuff_condensed_medium"
         android:text="Register"
         android:textSize="26dp"
         android:textStyle="bold"
@@ -27,30 +29,37 @@
         android:hint="username"
         android:drawableStart="@drawable/baseline_account_circle_24"
         android:drawablePadding="20dp"
+        android:textSize="14sp"
         />
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="email"
+        android:inputType="textEmailAddress"
         android:drawableStart="@drawable/baseline_alternate_email_24"
         android:drawablePadding="20dp"
+        android:textSize="14sp"
         />
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="phone"
+        android:inputType="number"
         android:drawableStart="@drawable/baseline_phone_24"
         android:drawablePadding="20dp"
+        android:textSize="14sp"
         />
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:hint="password"
         android:drawableStart="@drawable/baseline_lock_person_24"
         android:drawablePadding="20dp"
+        android:textSize="14sp"
         />
 
     <LinearLayout
@@ -95,13 +104,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Register"
-    android:layout_marginTop="50dp"/>
+    android:layout_marginTop="50dp"
+    android:backgroundTint="@color/purple_500"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Already have an account?"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal"
+        android:textSize="12sp"/>
 
 
 

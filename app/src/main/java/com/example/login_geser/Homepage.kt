@@ -8,34 +8,36 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.viewpager2.widget.ViewPager2
-import com.example.login_geser.databinding.ActivityMainBinding
-import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayoutMediator
+import com.example.login_geser.databinding.ActivityHomepageBinding
 
-class MainActivity : AppCompatActivity() {
-    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
-    val tabName = arrayOf("REGISTER", "LOGIN")
+class Homepage : AppCompatActivity() {
+    //mengaktifkan homepage binding
+    private val binding by lazy{
+        ActivityHomepageBinding.inflate(layoutInflater)}
+
+    //content
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
 
-        val sectionsPagerAdapter = SectionsPagerAdapter(this)
-        val viewPager : ViewPager2 = findViewById(R.id.view_pager)
-        viewPager.adapter = sectionsPagerAdapter
+        // mengambil data dari intent
+        val username = intent.getStringExtra("username")
 
-        val tabs: TabLayout = findViewById(R.id.tab_layout)
-        TabLayoutMediator(tabs, viewPager) { tab, position ->
-            tab.text = tabName[position]
-        }.attach()
+        //mengganti data  pada id putUsername
+        binding.putUsername.text = username
 
+        binding.btnSad.setOnClickListener{Toast.makeText(this, "Do You Need Money?", Toast.LENGTH_SHORT).show()}
+        binding.btnHappy.setOnClickListener{Toast.makeText(this, "UR MAI Sunsin", Toast.LENGTH_SHORT).show()}
 
     }
+    //menampilkan menu options
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_options, menu)
         return true
     }
+
+    //exit pada icon exit
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_exit -> {
@@ -48,5 +50,4 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
-
 }

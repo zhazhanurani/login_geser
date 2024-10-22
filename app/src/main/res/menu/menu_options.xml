@@ -7,5 +7,4 @@
         android:icon="@drawable/baseline_exit_to_app_24"
         android:orderInCategory="100"
         app:showAsAction="always" />
-
 </menu>

@@ -10,8 +10,10 @@
     <!-- Base application theme with ActionBar. -->
     <style name="Base.Theme.Login_geser.WithActionBar"
         parent="Theme.Material3.DayNight">
-        <!-- Customize your light theme here, similar to the theme without
-       ActionBar. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/grey</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="actionBarStyle">@style/MyCustomActionBar</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
     <!-- Themes that can be applied to the application or specific activities. -->
